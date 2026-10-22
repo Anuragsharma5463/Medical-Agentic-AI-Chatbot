@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+pydantic-settings
+langgraph
+langchain-openai
+pinecone
+tavily-python
+pymupdf
+certifi
+openai
+httpx
+langgraph-checkpoint-sqlite
