@@ -11,13 +11,13 @@ conda create -n project python=3.11 -y
 
 conda activate project
 
-pip install -r requirements.txt
+pip install -r requirement.txt
 
 add  .env
 
 # Edit .env with real API keys
 
-python ingest.py --pdf data/medical_book.pdf
+python ingest.py --pdf data/Medical_book.pdf
 
 uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 ```
@@ -34,7 +34,7 @@ Open **http://127.0.0.1:8000**. API documentation: **http://127.0.0.1:8000/docs*
 - `ingest.py` — chunk and embed every readable PDF page
 - `templates/index.html` — UI
 - `static/style.css`, `static/app.js` — styles and browser controls
-- `data/medical_book.pdf` — user-supplied reference PDF
+- `data/Medical_book.pdf` — user-supplied reference PDF
 
 ## Troubleshooting
 - **Connecting / checking**: run `uvicorn` and open `/api/health` first. Check browser console and backend terminal.
